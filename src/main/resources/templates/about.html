@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet"
+	href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" th:href="@{/images/food.png}" />
+<link rel="stylesheet" th:href="@{/css/style.css}" />
+<link rel="stylesheet" th:href="@{/css/about.css}">
+<title>About</title>
+</head>
+
+<body>
+	<!-- header -->
+
+	<header class="header">
+
+		<a th:href="@{/}" class="logo"> <i class="fa fa-hand-paper"></i>
+			Helping Hand
+		</a>
+
+		<nav class="navbar">
+			<a th:href="@{/}">home</a> <a href="#about">about</a> <a
+				href="#gallery">gallery</a> <a th:href="@{/home}" target="contact">contact</a>
+			<a th:href="@{/signin}">Login</a> <a th:href="@{/signup}">Signup</a>
+		</nav>
+	</header>
+
+	<!-- end -->
+	<div class="skills">
+		<h1>About Us</h1>
+		<div class="skill-row">
+			<img class="code-img" th:src="@{/images/img.jpeg}" alt="comp png">
+			<h3>Lorem & Ipsum</h3>
+			<p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis.
+				Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit
+				nam, lectus ante, ut lorem eros.</p>
+		</div>
+		<div class="skill-row">
+			<img class="chilli-img" th:src="@{/images/img.jpg}" alt="skill img">
+			<h3>Lorem Ipsum Dolor</h3>
+			<p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et
+				eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque
+				vel eu, rutrum nam.</p>
+		</div>
+	</div>
+
+	<!-- footer -->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>
+					<i class="fa fa-hand-paper"></i> Helping Hand
+				</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<p class="links">
+					<i class="fas fa-clock"></i>monday - sunday
+				</p>
+				<p class="days">7:00AM - 11:00PM</p>
+			</div>
+
+			<div class="box">
+				<h3>Contact Info</h3>
+				<a href="#" class="links"><i class="fas fa-phone"></i>
+					1245-147-2589</a> <a href="#" class="links"><i class="fas fa-phone"></i>
+					1245-147-2589</a> <a href="#" class="links"><i
+					class="fas fa-envelope"></i> info@foodlife.com</a> <a href="#"
+					class="links"><i class="fas fa-map-marker-alt"></i> Greater
+					Noida, India</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#" class="links"> <i class="fas fa-arrow-right"></i>home
+				</a> <a href="#" class="links"> <i class="fas fa-arrow-right"></i>about
+				</a> <a href="#" class="links"> <i class="fas fa-arrow-right"></i>gallery
+				</a>
+			</div>
+
+			<div class="box">
+				<h3>newsletter</h3>
+				<p>subscribe for latest updates</p>
+				<input type="email" placeholder="Your Email" class="email">
+				<a href="#" class="btn">subscribe</a>
+				<div class="share">
+					<a href="#" class="fab fa-facebook-f"></a> <a href="#"
+						class="fab fa-twitter"></a> <a href="#" class="fab fa-instagram"></a>
+					<a href="#" class="fab fa-linkedin"></a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="credit">
+			&copy; 2023 NIET. All rights reserved by <a href="#" class="link">Raj
+				Sharma</a>
+		</div>
+
+	</section>
+
+	<!-- end -->
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<script th:src="@{/js/script.js}"></script>
+
+</body>
+
+</html>
